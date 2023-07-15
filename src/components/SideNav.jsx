@@ -1,4 +1,5 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
+import resumeLink from "../assets/Velammal M - resume.pdf";
 import {
   AiOutlineMenu,
   AiOutlineHome,
@@ -87,14 +88,15 @@ const SideNav = () => {
           </a>
 
           <a
-            href="#resume"
+            href=""
             className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110"
+            onClick={() => window.open(resumeLink)}
           >
             <BsPerson size={20} />
           </a>
 
           <a
-            href="#mail"
+            href="#contact"
             className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110"
           >
             <AiOutlineMail size={20} />

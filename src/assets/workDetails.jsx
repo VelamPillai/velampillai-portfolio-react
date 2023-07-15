@@ -37,4 +37,4 @@ const workDetails = [
   },
 ];
 
-export default workDetails;
+export default workDetails

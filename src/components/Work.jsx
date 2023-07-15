@@ -3,7 +3,7 @@ import workDetails from "../assets/workDetails.jsx";
 import WorkItem from "./WorkItem.jsx";
 const Work = () => {
   return (
-      <div className="max-w-[1040px] m-auto md:pl-20 p-4 py-16 ">
+      <div id="work" className="max-w-[1040px] m-auto md:pl-20 p-4 py-16 ">
           
           <h1 className="text-4xl flex justify-center items-center font-bold mb-2">Work</h1>
           {
