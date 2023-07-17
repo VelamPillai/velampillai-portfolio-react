@@ -1,13 +1,35 @@
-import React from "react"
+import React from "react";
+import { navigate } from "react-router-dom";
 
 const Contact = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const myForm = e.target;
+    const formData = new FormData(myForm);
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => navigate("/thank-you/"))
+      .catch((error) => alert(error));
+  };
+
+
   return (
     <div
       id="contact"
       className="max-w-[1040px]  m-auto  md-pl-20 p-4 py-10 bg-gradient-to-r from-cyan-200 to-white text-[#001b5e] "
     >
       <h1 className="py-4 text-4xl text-center text-[#001b5e]">Contact</h1>
-      <form method="POST" name="contact" data-netlify="true" onSubmit="submit">
+      <form
+        method="POST"
+        name="contact"
+        data-netlify="true"
+        onSubmit={handleSubmit}
+      >
         <div className="grid md:grid-row-2 gap-4 w-[50%] py-2  m-auto">
           <label
             className="uppercase text-sm py-2 text-[#001b5e] "
