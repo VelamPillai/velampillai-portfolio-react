@@ -10,12 +10,21 @@ import { GrProjects } from "react-icons/gr";
 import { BsPerson } from "react-icons/bs";
 
 const SideNav = () => {
-    const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(false);
     const handleNav = () => {
       setNav(!nav);
       
     };
-        
+  const addBorder = (e) => {
+    e.target.style.border = "1px solid cyan";
+    e.target.firstChild.style.visibility = "visible";
+    }
+
+  const removeBorder = (e) => {
+    console.log(e.target);
+    e.target.style.border = "none";
+    e.target.firstChild.style.visibility = "hidden";
+  };
   return (
     <div>
       <AiOutlineMenu
@@ -51,9 +60,11 @@ const SideNav = () => {
           </a>
           <a
             href=""
-            onClick={() => { window.open(resumeLink); handleNav() }}
+            onClick={() => {
+              window.open(resumeLink);
+              handleNav();
+            }}
             className="w-[75%] flex justify-center items-center rounded-full shadow-lg shadow-gray-400 bg-gray-100 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200  "
-            
           >
             <BsPerson size={20} />
             <span className="pl-4">Resume</span>
@@ -76,21 +87,32 @@ const SideNav = () => {
           <a
             href="#main"
             className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110"
+            onMouseEnter={addBorder}
+            onMouseLeave={removeBorder}
           >
+            <p className="absolute right-[5rem] invisible">Home</p>
             <AiOutlineHome size={20} />
           </a>
 
           <a
             href="#work"
             className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110"
+            onMouseEnter={addBorder}
+            onMouseLeave={removeBorder}
           >
+            <p className="absolute right-[5rem] invisible">Work</p>
             <GrProjects size={20} />
           </a>
 
           <a
             href="#projects"
             className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110"
-          >
+            onMouseEnter={addBorder}
+            onMouseLeave={removeBorder}
+        >
+          <p className="absolute right-[5rem] invisible">
+              Projects
+            </p>
             <AiOutlineProject size={20} />
           </a>
 
@@ -98,14 +120,24 @@ const SideNav = () => {
             href=""
             className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110"
             onClick={() => window.open(resumeLink)}
-          >
+            onMouseEnter={addBorder}
+            onMouseLeave={removeBorder}
+        >
+          <p className="absolute right-[5rem] invisible">
+              Resume
+            </p>
             <BsPerson size={20} />
           </a>
 
           <a
             href="#contact"
             className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110"
-          >
+            onMouseEnter={addBorder}
+            onMouseLeave={removeBorder}
+        >
+          <p className="absolute right-[5rem] invisible">
+            contact
+            </p>
             <AiOutlineMail size={20} />
           </a>
         </div>

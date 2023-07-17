@@ -16,7 +16,6 @@ const WorkItem = ({ title, company, duration, responsibility }) => {
           <span className="my-1 text-xs font-normal leading-none text-stone-400">
             {company}
           </span>
-
           <span>
             <ol>
               {responsibility.map((item, idx) => (
