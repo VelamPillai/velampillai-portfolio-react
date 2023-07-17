@@ -29,19 +29,6 @@ const Contact = () => {
         </div>
         <div className="grid md:grid-row-2 gap-4 w-[50%] py-2  m-auto">
           <label
-            className="uppercase text-sm py-2 text-[#001b5e] "
-            htmlFor="phone"
-          >
-            Phone Number
-          </label>
-          <input
-            className="border-2 rounded-lg p-3 flex hover-gray-300 "
-            type="number"
-            name="phone"
-          />
-        </div>
-        <div className="grid md:grid-row-2 gap-4 w-[50%] py-2  m-auto">
-          <label
             className="uppercase text-sm text-[#001b5e]  py-2"
             htmlFor="email"
           >
