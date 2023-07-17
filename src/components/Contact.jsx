@@ -13,7 +13,8 @@ const Contact = () => {
         method="POST"
         name="contact"
       >
-        <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="form-name" value="contact">
+
         <div className="grid md:grid-row-2 gap-4 w-[50%] py-2  m-auto">
           <label
             className="uppercase text-sm py-2 text-[#001b5e] "
