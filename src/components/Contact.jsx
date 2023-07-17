@@ -1,5 +1,4 @@
 import React from "react";
-import { navigate } from "react-router-dom";
 
 const Contact = () => {
 
@@ -14,6 +13,7 @@ const Contact = () => {
         name="contact"
       >
         <input type="hidden" name="form-name" value="contact" />
+
         <div className="grid md:grid-row-2 gap-4 w-[50%] py-2  m-auto">
           <label
             className="uppercase text-sm py-2 text-[#001b5e] "
@@ -65,8 +65,8 @@ const Contact = () => {
             placeholder="Hello from ..."
           ></textarea>
         </div>
-        <button className="bg-cyan-100 grid  md:grid-row-2 gap-4 w-[50%] py-4  mx-auto mt-4 rounded-lg text-[#001b5e] hover:outline">
-          Submit
+        <button className="bg-cyan-100 grid  md:grid-row-2 gap-4 w-[50%] py-4  mx-auto mt-4 rounded-lg text-[#001b5e] hover:outline" type="submit">
+          send Message
         </button>
       </form>
     </div>
