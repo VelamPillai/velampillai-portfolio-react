@@ -28,14 +28,24 @@ const Main = () => {
               ]}
               wrapper="div"
               speed={50}
-              style={{ fontSize: "1em" ,display:"inline-block"}}
+              style={{ fontSize: "1em", display: "inline-block" }}
               repeat={Infinity}
             />
           </h3>
-          <div className="flex justify-between pt-6 max-w-[200px] w-full  ">
-            <FaLinkedin className="cursor-pointer" size={20} />
-            <FaXingSquare className="cursor-pointer" size={20} />
-            <FaGithubSquare className="cursor-pointer" size={20} />
+          <div className="flex justify-between pt-6 max-w-[100px] w-full  ">
+            <FaLinkedin
+              className="cursor-pointer"
+              size={20}
+              onClick={() =>
+                window.open("https://www.linkedin.com/in/velam-pillai/")
+              }
+            />
+
+            <FaGithubSquare
+              className="cursor-pointer"
+              size={20}
+              onClick={() => window.open("https://github.com/VelamPillai")}
+            />
           </div>
         </div>
       </div>
