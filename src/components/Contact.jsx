@@ -2,21 +2,6 @@ import React from "react";
 import { navigate } from "react-router-dom";
 
 const Contact = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    const myForm = e.target;
-    const formData = new FormData(myForm);
-
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(() => navigate("/thank-you/"))
-      .catch((error) => alert(error));
-  };
-
 
   return (
     <div
@@ -27,9 +12,8 @@ const Contact = () => {
       <form
         method="POST"
         name="contact"
-        data-netlify="true"
-        onSubmit={handleSubmit}
       >
+        <input type="hidden" name="form-name" value="contact" />
         <div className="grid md:grid-row-2 gap-4 w-[50%] py-2  m-auto">
           <label
             className="uppercase text-sm py-2 text-[#001b5e] "
@@ -52,7 +36,7 @@ const Contact = () => {
           </label>
           <input
             className="border-2 rounded-lg p-3 flex hover-gray-300 "
-            type="text"
+            type="number"
             name="phone"
           />
         </div>
@@ -81,7 +65,7 @@ const Contact = () => {
             placeholder="Hello from ..."
           ></textarea>
         </div>
-        <button className="bg-cyan-100 text-gray-800 grid  md:grid-row-2 gap-4 w-[50%] py-4  mx-auto mt-4 rounded-lg text-[#001b5e] hover:outline">
+        <button className="bg-cyan-100 grid  md:grid-row-2 gap-4 w-[50%] py-4  mx-auto mt-4 rounded-lg text-[#001b5e] hover:outline">
           Submit
         </button>
       </form>
