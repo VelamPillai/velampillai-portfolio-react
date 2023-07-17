@@ -21,7 +21,6 @@ const SideNav = () => {
     }
 
   const removeBorder = (e) => {
-    console.log(e.target);
     e.target.style.border = "none";
     e.target.firstChild.style.visibility = "hidden";
   };
