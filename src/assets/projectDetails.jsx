@@ -23,7 +23,7 @@ const projectDetails = [
     projectLink: "https://www.npmjs.com/package/tic-tac-toe-console-game",
   },
   {
-    title: "Varaah PEt Store",
+    title: "Varaah Pet Store",
     implementation:
       "React.js,TailwindCSS, JavaScript, Node.js, Express, MongoDB Atlas",
     image: project2Image,

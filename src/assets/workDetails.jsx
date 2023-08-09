@@ -1,6 +1,6 @@
 const workDetails = [
   {
-    title: "Intership - Frontend Developer",
+    title: "Internship - Frontend Developer",
     company: "IT Systemhaus der Bundesagentur für Arbeit, Nürnberg",
     duration: "Feb 2023 – Apr 2023",
     responsibility: [
