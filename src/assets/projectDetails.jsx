@@ -17,10 +17,10 @@ const projectDetails = [
     projectLink: "https://velampillai.github.io/BloomysJunction/",
   },
   {
-    title: "Tic-Tac-Toe",
-    implementation: "JavaScript",
+    title: "Anna's Artistry",
+    implementation: "React.js, TailwindCSS, JavaScript",
     image: project3Image,
-    projectLink: "https://www.npmjs.com/package/tic-tac-toe-console-game",
+    projectLink: "https://velampillai.github.io/annu-s-artistry/",
   },
   {
     title: "Varaah Pet Store",
