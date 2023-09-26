@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import resumeLink from "../assets/Velammal M - resume.pdf";
+import resumeLink from "../assets/Resume_Velammal_portfolio.pdf";
 import {
   AiOutlineMenu,
   AiOutlineHome,
