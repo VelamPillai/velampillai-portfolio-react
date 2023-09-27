@@ -13,15 +13,15 @@ const workDetails = [
     ],
   },
   {
-    title: "Junior Frontend Developer",
-    company: "Nullerrors, India",
-    duration: "Feb 2018 – May 2019",
+    title: "Traniee - Full Stack Web Development",
+    company: "Digitial Career Institute, Berlin, Germany",
+    duration: "Feb 2022 – Feb 2023",
     responsibility: [
-      "Designed and implemented the front-end code for one of the e-commerce websites.",
-        "Assisted the development team in maintaining the web pages.",
-
-"Wrote unit tests and UAT tests to ensure bug free code.",
-"Worked in an agile environment with daily standups."
+          " Took up the role of student tutor and mentoring upcoming 20 + developer‘s on the basics of HTML5, CSS3, JavaScript and React.",
+    "Contributed to the development and design of in - house web projects.",
+    "Contributed to daily stand – up meetings, code maintenance, problem solving and debugging the errors.",
+      " Analyzed UI / UX design for responsive layout to improve usability.",
+    "Turned 30 + design pages into HTML, 5 CSS3, JavaScript and React."
     ]
   },
   {
