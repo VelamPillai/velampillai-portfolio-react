@@ -13,9 +13,9 @@ const workDetails = [
     ],
   },
   {
-    title: "Traniee - Full Stack Web Development",
-    company: "Digitial Career Institute, Berlin, Germany",
-    duration: "Feb 2022 – Feb 2023",
+    title: "Trainee - Full Stack Web Development",
+    company: "Digital Career Institute GmbH, Berlin, Germany",
+    duration: "Feb 2022 – Jan 2023",
     responsibility: [
           " Took up the role of student tutor and mentoring upcoming 20 + developer‘s on the basics of HTML5, CSS3, JavaScript and React.",
     "Contributed to the development and design of in - house web projects.",
