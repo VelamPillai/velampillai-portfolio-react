@@ -3,11 +3,13 @@ import React from "react";
 const Contact = () => {
 
   return (
+    <div className="w-full h-full relative bg-gradient-to-r from-pink-200 to-[#123456]">
+
     <div
       id="contact"
-      className="max-w-[1040px]  m-auto  md-pl-20 p-4 py-10 bg-gradient-to-r from-cyan-200 to-white text-[#001b5e] "
+        className="max-w-[1040px]  m-auto  md-pl-20 p-4 py-10  text-[#123456] "
     >
-      <h1 className="py-4 text-4xl text-center text-[#001b5e]">Contact</h1>
+        <h1 className="py-4 text-4xl text-center ">Contact</h1>
       <form
         method="POST"
         name="contact"
@@ -16,7 +18,7 @@ const Contact = () => {
 
         <div className="grid md:grid-row-2 gap-4 w-[50%] py-2  m-auto">
           <label
-            className="uppercase text-sm py-2 text-[#001b5e] "
+            className="uppercase text-sm py-2  "
             htmlFor="name"
           >
             Name
@@ -29,7 +31,7 @@ const Contact = () => {
         </div>
         <div className="grid md:grid-row-2 gap-4 w-[50%] py-2  m-auto">
           <label
-            className="uppercase text-sm text-[#001b5e]  py-2"
+            className="uppercase text-sm   py-2"
             htmlFor="email"
           >
             Email
@@ -41,7 +43,7 @@ const Contact = () => {
           />
         </div>
         <div className="grid md:grid-row-2 gap-4 w-[50%] py-2  m-auto">
-          <label className="uppercase text-sm py-2 text-[#001b5e] ">
+          <label className="uppercase text-sm py-2  ">
             Message
           </label>
           <textarea
@@ -52,11 +54,12 @@ const Contact = () => {
             placeholder="Hello from ..."
           ></textarea>
         </div>
-        <button className="bg-cyan-100 grid  md:grid-row-2 gap-4 w-[50%] py-4  mx-auto mt-4 rounded-lg text-[#001b5e] hover:outline" type="submit">
+          <button className=" grid  md:grid-row-2 gap-4 w-[50%] py-4  mx-auto mt-4 rounded-lg hover:outline bg-gradient-to-r  from-pink-200 to-[#123456] text-white" type="submit">
           send Message
         </button>
       </form>
-    </div>
+      </div>
+      </div>
   );
 }
 export default Contact

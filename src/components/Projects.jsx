@@ -3,8 +3,10 @@ import ProjectItem from "./ProjectItem.jsx"
 import projectDetails from '../assets/projectDetails.jsx';
 const Projects = () => {
   return (
+    <div className="w-full h-full relative bg-[#123456]">
+
     <div id="projects" className="max-w-[1040px] m-auto md:pl-20 p-4 py-16 ">
-      <h1 className="text-4xl font-bold text-center text-[#001b5e]">
+        <h1 className="text-4xl font-bold text-center text-[#96b1f5]">
         Projects
       </h1>
       
@@ -19,7 +21,8 @@ const Projects = () => {
           />
         ))}
       </div>
-    </div>
+      </div>
+      </div>
   );
 }
 export default Projects
