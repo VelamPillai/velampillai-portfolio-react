@@ -12,7 +12,6 @@ import { BsPerson } from "react-icons/bs";
 const SideNav = () => {
   const [nav, setNav] = useState(false);
   const handleNav = (e) => {
-    console.log(e);
       setNav(!nav);
       
     };
