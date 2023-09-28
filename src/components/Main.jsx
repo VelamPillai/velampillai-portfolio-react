@@ -7,13 +7,18 @@ import { FaGithubSquare, FaLinkedin, FaXingSquare } from "react-icons/fa";
 
 const Main = () => {
   return (
-    <div id="main" className="w-full h-screen relative bg-blue-300">
+    <div id="main" className="w-full h-screen relative ">
+      <img
+        src={mainBG}
+        alt="mainBG"
+        className="w-[100%] h-[100%] object-center  scale-x-[1] flex justify-center items-center absolute top-0 left-0  "
+      />
        <img
         src={desktopBG}
         alt="mainBG"
         className="w-[50%] h-[50%] object-center  scale-x-[1] flex justify-center items-center absolute top-[25%] left-[25%] "
       /> 
-      <div className="w-full h-screen absolute top-0 left-0 bg-blue/80">
+      <div className="w-full h-screen absolute top-0 left-0 bg-blue/50">
         
         <div className="max-w-[700px] m-auto h-full flex flex-col justify-center items-center lg:items-start p-[5rem] mt-6 ">
           <h1 className="sm:text-5xl text-2xl font-bold text-gray-200">
