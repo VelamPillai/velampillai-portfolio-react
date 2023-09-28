@@ -17,7 +17,7 @@ const SideNav = () => {
       
     };
   const addBorder = (e) => {
-    e.target.style.border = "1px solid cyan";
+    e.target.style.border = "1px solid #96b1f5";
     e.target.firstChild.style.visibility = "visible";
     }
 
@@ -40,7 +40,7 @@ const SideNav = () => {
             onClick={handleNav}
           >
             <AiOutlineHome size={20} />
-            <span className="pl-4">Home</span>
+            <span className="pl-4 ">Home</span>
           </a>
           <a
             href="#work"
@@ -90,7 +90,7 @@ const SideNav = () => {
             onMouseEnter={addBorder}
             onMouseLeave={removeBorder}
           >
-            <p className="absolute right-[5rem] invisible">Home</p>
+            <p className="absolute right-[5rem] invisible bg-gray-100 p-1 rounded-md shadow-gray-400">Home</p>
             <AiOutlineHome size={20} />
           </a>
 
@@ -100,7 +100,7 @@ const SideNav = () => {
             onMouseEnter={addBorder}
             onMouseLeave={removeBorder}
           >
-            <p className="absolute right-[5rem] invisible">Work</p>
+            <p className="absolute right-[5rem] invisible   bg-gray-100 p-1 rounded-md shadow-gray-400">Work</p>
             <GrProjects size={20} />
           </a>
 
@@ -110,7 +110,7 @@ const SideNav = () => {
             onMouseEnter={addBorder}
             onMouseLeave={removeBorder}
         >
-          <p className="absolute right-[5rem] invisible">
+            <p className="absolute right-[5rem] invisible  bg-gray-100 p-1 rounded-md shadow-gray-400">
               Projects
             </p>
             <AiOutlineProject size={20} />
@@ -123,7 +123,7 @@ const SideNav = () => {
             onMouseEnter={addBorder}
             onMouseLeave={removeBorder}
         >
-          <p className="absolute right-[5rem] invisible">
+            <p className="absolute right-[5rem] invisible  bg-gray-100 p-1 rounded-md shadow-gray-400">
               Resume
             </p>
             <BsPerson size={20} />
@@ -135,7 +135,7 @@ const SideNav = () => {
             onMouseEnter={addBorder}
             onMouseLeave={removeBorder}
         >
-          <p className="absolute right-[5rem] invisible">
+            <p className="absolute right-[5rem] invisible  bg-gray-100 p-1 rounded-md shadow-gray-400">
             contact
             </p>
             <AiOutlineMail size={20} />
