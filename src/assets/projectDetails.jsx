@@ -6,10 +6,9 @@ import project4Image from "../assets/project4.png";
 const projectDetails = [
   {
     title: "GTM Plantation",
-    implementation: "React Native, Redux, REST API, Mobile App Development",
-    // No image needed - we'll use a colored background
+    implementation: "React Native, Expo CLI, Node.js, MongoDB",
     projectLink: "https://play.google.com/store/apps/details?id=com.greentnmission.gtmplantation",
-    description: "Developed a mobile application for the Green Tamil Nadu Mission allowing users to manage and track plantation activities. Implemented features for planning history, land entry, and photo documentation of planting activities.",
+    description: "Developed a mobile application for the Green Tamil Nadu Mission allowing users to manage and track plantation activities. Progressive Web App (PWA) with offline-first functionality. Real-time data sync and user authentication. Developed using Expo CLI for seamless cross-platform deployment. Outcome: Deployed on Play Store with 1,000+ downloads.",
     featured: true,
     isMobileApp: true,
     bgColor: "from-green-800 to-emerald-600", // Gradient colors for background
