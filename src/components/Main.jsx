@@ -5,13 +5,14 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 const Main = () => {
   return (
     <div id="main" className="w-full h-screen bg-gradient-to-br from-indigo-900 via-blue-800 to-blue-600 flex items-center justify-center relative overflow-hidden">
+      {/* Static background shapes - no animations */}
       {/* Large blurred gradient shapes */}
       <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500/30 rounded-full blur-3xl"></div>
       <div className="absolute bottom-10 right-10 w-96 h-96 bg-indigo-600/30 rounded-full blur-3xl"></div>
       <div className="absolute top-1/2 -translate-y-1/2 right-1/4 w-40 h-40 bg-emerald-500/30 rounded-full blur-2xl"></div>
 
-      {/* 3D Cube */}
-      <div className="absolute top-20 right-20 w-16 h-16 animate-spin-slow" style={{ animationDuration: "15s", perspective: "800px", transformStyle: "preserve-3d" }}>
+      {/* 3D Cube - static */}
+      <div className="absolute top-20 right-20 w-16 h-16" style={{ perspective: "800px", transformStyle: "preserve-3d" }}>
         <div className="absolute inset-0 border-2 border-white/30 bg-white/5 transform rotateX(0deg) translateZ(8px)"></div>
         <div className="absolute inset-0 border-2 border-white/30 bg-white/5 transform rotateX(180deg) translateZ(8px)"></div>
         <div className="absolute inset-0 border-2 border-white/30 bg-white/5 transform rotateY(90deg) translateZ(8px)"></div>
@@ -20,32 +21,32 @@ const Main = () => {
         <div className="absolute inset-0 border-2 border-white/30 bg-white/5 transform rotateX(-90deg) translateZ(8px)"></div>
       </div>
 
-      {/* 3D Pyramid */}
-      <div className="absolute bottom-32 left-20 w-20 h-20 animate-float" style={{ animationDuration: "6s", perspective: "800px", transformStyle: "preserve-3d" }}>
+      {/* 3D Pyramid - static */}
+      <div className="absolute bottom-32 left-20 w-20 h-20" style={{ perspective: "800px", transformStyle: "preserve-3d" }}>
         <div className="absolute left-0 right-0 bottom-0 h-0 w-0 border-l-[40px] border-r-[40px] border-b-[40px] border-l-transparent border-r-transparent border-b-emerald-400/30"></div>
         <div className="absolute left-0 top-0 h-0 w-0 border-l-[40px] border-b-[40px] border-l-transparent border-b-pink-400/30 transform -rotate-90 translate-y-10"></div>
         <div className="absolute right-0 top-0 h-0 w-0 border-r-[40px] border-b-[40px] border-r-transparent border-b-blue-400/30 transform rotate-90 translate-y-10"></div>
         <div className="absolute left-0 right-0 top-0 h-0 w-0 border-l-[40px] border-r-[40px] border-b-[40px] border-l-transparent border-r-transparent border-b-purple-400/30 transform rotate-180 translate-y-20"></div>
       </div>
 
-      {/* 3D rotating circle */}
-      <div className="absolute top-1/3 right-1/3 w-24 h-24 animate-pulse" style={{ perspective: "800px", transformStyle: "preserve-3d" }}>
-        <div className="absolute inset-0 border-2 border-white/40 rounded-full transform animate-ping" style={{ animationDuration: "3s" }}></div>
-        <div className="absolute inset-2 border-2 border-emerald-300/40 rounded-full transform rotate-45 animate-ping" style={{ animationDuration: "4s" }}></div>
-        <div className="absolute inset-4 border-2 border-blue-300/40 rounded-full transform rotate-90 animate-ping" style={{ animationDuration: "5s" }}></div>
+      {/* Static circles */}
+      <div className="absolute top-1/3 right-1/3 w-24 h-24" style={{ perspective: "800px", transformStyle: "preserve-3d" }}>
+        <div className="absolute inset-0 border-2 border-white/40 rounded-full"></div>
+        <div className="absolute inset-2 border-2 border-emerald-300/40 rounded-full transform rotate-45"></div>
+        <div className="absolute inset-4 border-2 border-blue-300/40 rounded-full transform rotate-90"></div>
       </div>
 
-      {/* Floating circles with shadow */}
-      <div className="absolute top-10 left-1/3 w-16 h-16 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-full shadow-lg shadow-purple-500/20 animate-float" style={{ animationDuration: "8s" }}></div>
-      <div className="absolute bottom-20 right-1/3 w-20 h-20 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-full shadow-lg shadow-blue-500/20 animate-float" style={{ animationDuration: "10s", animationDelay: "2s" }}></div>
+      {/* Static circles with shadow */}
+      <div className="absolute top-10 left-1/3 w-16 h-16 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-full shadow-lg shadow-purple-500/20"></div>
+      <div className="absolute bottom-20 right-1/3 w-20 h-20 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-full shadow-lg shadow-blue-500/20"></div>
 
-      {/* 3D torus/ring */}
-      <div className="absolute bottom-40 right-40 w-28 h-28 border-8 border-yellow-400/30 rounded-full transform animate-spin-slow" style={{ animationDuration: "20s" }}>
+      {/* Static torus/ring */}
+      <div className="absolute bottom-40 right-40 w-28 h-28 border-8 border-yellow-400/30 rounded-full">
         <div className="absolute inset-0 border-8 border-yellow-400/10 rounded-full transform rotate-45"></div>
       </div>
 
-      {/* 3D Cylinder */}
-      <div className="absolute top-40 left-40 w-14 h-20 animate-float" style={{ animationDuration: "7s", perspective: "800px" }}>
+      {/* Static cylinder */}
+      <div className="absolute top-40 left-40 w-14 h-20" style={{ perspective: "800px" }}>
         <div className="absolute inset-0 bg-cyan-500/20 rounded-full transform rotateX(70deg) shadow-lg shadow-cyan-500/20"></div>
         <div className="absolute inset-0 bg-cyan-500/10 rounded-full transform rotateX(-70deg) shadow-lg shadow-cyan-500/10"></div>
         <div className="absolute inset-x-0 top-0 h-5 bg-cyan-500/30 rounded-full"></div>
