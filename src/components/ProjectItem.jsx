@@ -123,16 +123,8 @@ const ProjectItem = ({
 
         {/* Special overlay for mobile apps */}
         {isMobileProject && (
-          <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-            <a
-              href={projectLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center space-x-2 bg-white hover:bg-gray-100 text-gray-800 px-6 py-3 rounded-lg transition-all duration-300 transform scale-90 group-hover:scale-100 shadow-lg"
-            >
-              <span>View on Google Play</span>
-              <FaGooglePlay size={18} />
-            </a>
+          <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center">
+
           </div>
         )}
       </div>
@@ -165,8 +157,8 @@ const ProjectItem = ({
           rel="noopener noreferrer"
           className="inline-flex items-center space-x-2 text-emerald-400 hover:text-emerald-300 transition-colors duration-300"
         >
-          <span>{isMobileProject ? 'View on Google Play' : 'View Project'}</span>
-          {isMobileProject ? <FaGooglePlay size={14} /> : <FaExternalLinkAlt size={14} />}
+          <span>{isMobileProject ? ' ' : 'View Project'}</span>
+          {isMobileProject ? ' ' : <FaExternalLinkAlt size={14} />}
         </a>
       </div>
     </div>
